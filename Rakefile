@@ -44,7 +44,7 @@ if defined?(Rcov)
       t.test_files = FileList[ 'test/*_test.rb' ]
       t.output_dir = 'test/coverage'
       t.verbose    = false
-      t.rcov_opts  << '-x /Library/ --html --rails --no-validator-links'
+      t.rcov_opts  << '-x /Library/ --html --rails'
     end
   end
 
