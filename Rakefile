@@ -1,15 +1,7 @@
+require 'rubygems'
 require 'rake'
 require 'rake/testtask'
-require 'rubygems'
-
-begin
-  raise LoadError if RUBY_VERSION >= '1.9'
-
-  require 'hanna'
-  require 'hanna/rdoctask'
-rescue LoadError
-  require 'rake/rdoctask'
-end
+require 'rake/rdoctask'
 
 begin
   require 'rcov/rcovtask'
