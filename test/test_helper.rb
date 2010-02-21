@@ -1,11 +1,5 @@
-$:.unshift(File.dirname(__FILE__) + '/../')
 require 'rubygems'
-require 'active_support'
-require 'active_support/test_case'
-require 'action_controller'
-require 'action_view'
-require 'action_view/helpers'
-require 'init'
+require 'tab_tab'
 
 begin
   require 'ruby-debug'
