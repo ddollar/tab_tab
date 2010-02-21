@@ -2,15 +2,9 @@ require 'rubygems'
 require 'tab_tab'
 
 begin
-  require 'ruby-debug'
+  require 'leftright'
 rescue LoadError
-  puts "Install 'ruby-debug' to use the debugger during tests"
-end
-
-begin
-  require 'redgreen'
-rescue LoadError
-  puts "Install 'redgreen' to get color output during tests"
+  puts "Install 'leftright' to get awesome output during tests"
 end unless ENV['TM_BUNDLE_PATH']
 
 class Test::Unit::TestCase
